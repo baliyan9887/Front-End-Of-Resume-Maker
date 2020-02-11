@@ -1,0 +1,184 @@
+.indicator{
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-10%, -50%);
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+.indicator span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  border-right: 3px solid #111;
+  border-bottom: 3px solid #111;
+  animation: animate 1s linear infinite;
+}
+.indicator span:nth-child(2){
+    top: -15px;
+    left: -15px;
+    animation-delay: 0s;  
+}
+.indicator span:nth-child(3){
+    top: 0px;
+    left: 0px; 
+    animation-delay: 0.2s; 
+}
+.indicator span:nth-child(4){
+    top: 15px;
+    left: 15px;  
+    animation-delay: 0.4s;
+}
+
+@keyframes animate
+{
+  0%{
+    border-color: #fff;
+    transform: translate(0,0);
+  }
+  20%{
+    border-color: #fff;
+    transform: translate(10px,10px);
+  }
+  20.1%,100%{
+    border-color: #111;
+  }
+}
+
+
+#resume .section-heading {
+    margin-top: 40px;
+    
+}
+
+#resume .resume-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+#resume .resume-item .resume-link {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#resume .resume-item .resume-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  color: #111;
+}
+#resume .resume-item .resume-caption i:hover{
+    color: #0078ff;
+}
+#resume .resume-item .resume-caption i:active{
+    color: deepskyblue;
+}
+#resume .resume-item .resume-caption p {
+  font-size: 16px;
+  font-style: italic;
+    
+  margin-top: -35px;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#resume * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  #resume .resume-item {
+    margin: 0 0 30px;
+  }
+}
+
+.resume-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
+}
+
+.resume-modal .modal-content {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.resume-modal .modal-content h2 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.resume-modal .modal-content p {
+  margin-bottom: 30px;
+}
+
+.resume-modal .modal-content p.item-intro {
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px 0 30px;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.resume-modal .modal-content ul.list-inline {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.resume-modal .modal-content img {
+  margin-bottom: 30px;
+}
+
+.resume-modal .modal-content button {
+  cursor: pointer;
+}
+
+.resume-modal .close-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.resume-modal .close-modal:hover {
+  opacity: 0.3;
+}
+
+.resume-modal .close-modal .lr {
+  /* Safari and Chrome */
+  z-index: 1051;
+  width: 1px;
+  height: 75px;
+  margin-left: 35px;
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #212529;
+}
+
+.resume-modal .close-modal .lr .rl {
+  /* Safari and Chrome */
+  z-index: 1052;
+  width: 1px;
+  height: 75px;
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #212529;
+}
+.resume modal .modal-content .form-control {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dynamic- Home</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/Final_logo.svg" rel="icon">
+  <link href="img/Final_logo.svg" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="build/css/intlTelInput.css">   
+    
+</head>
+<body>
+   <section class="bg-light page-section" id="resume">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Resume Builder</h2>
+            <p><i>follow the below steps and build compelling resume </i><i class="fa fa-hand-o-down"></i></p>
+            <hr>
+        </div>
+      </div>
+      <div class="row">
+          
+        <!----- personal info ----->  
+        <div class="col-md-3 col-sm-6 resume-item">
+          <a class="resume-link" data-toggle="modal" href="#resumeModal1">  
+            <div class="resume-caption">
+            <i class="fa fa-address-book fa-5x"></i>
+          </div>
+          </a>
+          <div class="resume-caption">
+            <p>Personal information</p>    
+          </div>    
+        </div>
+          
+        <!----  Summary ---->
+        <div class="col-md-3 col-sm-6 resume-item">
+          <a class="resume-link" data-toggle="modal" href="#resumeModal2">  
+            <div class="resume-caption">
+            <i class="fa fa-info-circle fa-5x"></i>
+          </div>
+          </a>
+          <div class="resume-caption">
+            <p>Summary</p>    
+          </div>    
+        </div>
+          
+        <!----  Work Experince ---->  
+         <div class="col-md-3 col-sm-6 resume-item">
+          <a class="resume-link" data-toggle="modal" href="#resumeModal3">  
+            <div class="resume-caption">
+            <i class="fa fa-suitcase fa-5x"></i>
+          </div>
+          </a>
+          <div class="resume-caption">
+            <p>Work Experience</p>    
+          </div>    
+        </div>
+          
+        <!----  Education ---->  
+        <div class="col-md-3 col-sm-6 resume-item">
+          <a class="resume-link" data-toggle="modal" href="#resumeModal4">  
+            <div class="resume-caption">
+            <i class="fa fa-graduation-cap fa-5x"></i>
+          </div>
+          </a>
+          <div class="resume-caption">
+            <p>Education</p>    
+          </div>    
+        </div>
+          
+          
+          
+        <!---- skills ---->  
+        <div class="col-md-3 col-sm-6 resume-item">
+          <a class="resume-link" data-toggle="modal" href="#resumeModal5">  
+            <div class="resume-caption">
+            <i class="fa fa-cogs fa-5x"></i>
+          </div>
+          </a>
+          <div class="resume-caption">
+            <p>Skills</p>    
+          </div>    
+        </div>
+        
+        <!---- Certification ------------>  
+       <div class="col-md-3 col-sm-6 resume-item">
+          <a class="resume-link" data-toggle="modal" href="#resumeModal6">  
+            <div class="resume-caption">
+            <i class="fa fa-certificate fa-5x"></i>
+          </div>
+          </a>
+          <div class="resume-caption">
+            <p>Certification</p>    
+          </div>    
+        </div>
+          
+        <!-----  Trophy ------------> 
+        <div class="col-md-3 col-sm-6 resume-item">
+          <a class="resume-link" data-toggle="modal" href="#resumeModal7">  
+            <div class="resume-caption">
+            <i class="fa fa-trophy fa-5x"></i>
+          </div>
+          </a>
+          <div class="resume-caption">
+            <p>Honors & Achivements</p>    
+          </div>    
+        </div>
+        
+        <!----   Research ----------->  
+        <div class="col-md-3 col-sm-6 resume-item">
+          <a class="resume-link" data-toggle="modal" href="#resumeModal8">  
+            <div class="resume-caption">
+            <i class="fa fa-pie-chart fa-5x"></i>
+          </div>
+          </a>
+          <div class="resume-caption">
+            <p>Research</p>    
+          </div>    
+        </div>
+          
+        <!------   Training ------------->  
+       <div class="col-md-3 col-sm-6 resume-item">
+          <a class="resume-link" data-toggle="modal" href="#resumeModal9">  
+            <div class="resume-caption">
+            <i class="fa fa-university fa-5x"></i>
+          </div>
+          </a>
+          <div class="resume-caption">
+            <p>Training</p>    
+          </div>    
+        </div> 
+          
+        <!---------  References ------------>  
+        <div class="col-md-3 col-sm-6 resume-item">
+          <a class="resume-link" data-toggle="modal" href="#resumeModal10">  
+            <div class="resume-caption">
+            <i class="fa fa-users fa-5x"></i>
+          </div>
+          </a>
+          <div class="resume-caption">
+            <p>References</p>    
+          </div>    
+        </div>   
+          
+        <!-------  Addition ----------->  
+       <div class="col-md-3 col-sm-6 resume-item">
+          <a class="resume-link" data-toggle="modal" href="#resumeModal11">  
+            <div class="resume-caption">
+            <i class="fa fa-plus fa-5x"></i>
+          </div>
+          </a>
+          <div class="resume-caption">
+            <p>Additional Information</p>    
+          </div>    
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+    
+    
+    <!----------- ---- Resume  models   --------->
+    <!---------------  Model 1 (Personal Information) ---------->
+    
+    <div class="resume-modal modal fade" id="resumeModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Personal Information</h2>
+                <p class="item-intro text-muted">All fields are required</p>
+               
+                <form>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name" style="margin-bottom: 10px;" required >
+                    
+                    </div>  
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name" style="margin-bottom: 10px;" required>
+                    </div>
+                     <div class="col">
+                        <input type="email" class="form-control" placeholder="xyz@example.com" style="margin-bottom: 10px;" required>
+                    </div>
+                    <div class="col">
+                        <input id="phone" name="phone" type="tel" class="form-control" style="width: 340px;" required>
+                        
+                    </div>
+                    <label style="margin-top: 10px;">Alternate:</label>
+                     <div class="col">
+                        <input id="alternate" name="alternate" type="tel" class="form-control" style="width: 340px;" required>
+                        
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Skype Username" style="margin-bottom: 10px; margin-top: 10px; ">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Linkedin url" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Github url" style="margin-bottom: 10px;">
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                    </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!---------------  Model 2 (Resume Summary) ---------->
+    
+    <div class="resume-modal modal fade" id="resumeModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Summary</h2>
+                <p class="item-intro text-muted">All fields are required</p>
+                <form>
+                    <div class="col">
+                    <textarea class="form-control" style="margin-bottom: 10px; height: 300px;" Placeholder="Write short introduction highlighting your career progress, achievements and skill sets. A - Start with your professional title and years of experience. B - Add 2 or 3 achievements (with number and details) " required></textarea>
+                    </div>    
+                    <div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <button class="btn btn-primary" data-dismiss="modal" type="button" style="margin-left: 15px;">Skip</button>
+                        
+                    </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+       <!---------------  Model 3 (Work Experience) ---------->
+    
+    <div class="resume-modal modal fade" id="resumeModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Work Experience</h2>
+                <p class="item-intro text-muted">All fields are required</p>
+                <form>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Your Employer" style="margin-bottom: 10px;" required title="Please enter 3 or more charcter">
+                    
+                    </div> 
+                    <div class="col">
+                         <select class="form-control" style="margin-bottom: 10px;" required>
+                            <option value="" aria-disabled="true">Designation</option>
+                           <option value="Associate Manager">Associate Manager</option>
+                            <option value="Sales Manager">Sales Manager</option> 
+                             <option value="Sales Executive">Sales Executive</option> 
+                             <option value="Senior Manager">Senior Manager</option> 
+                             <option value="Customer Relation">Customer Relationr</option> 
+                             <option value="Retail Sales Executive">Retail Sales Executive</option>  
+                        </select>
+                    </div>
+                    <label>Duration:</label>
+                    <div class="col">
+                        
+                        
+                        <select class="form-control" style="margin-bottom:10px;">
+                            <option value="">Select</option>
+                            <option value="Jan">January</option>
+                            <option value="Feb">Feburary</option>
+                            <option value="Mar">March</option>
+                            <option value="Apr">April</option>
+                            <option value="May">May</option>
+                            <option value="Jun">June</option>
+                            <option value="Jul">July</option>
+                            <option value="Aug">August</option>
+                            <option value="Sept">September</option>
+                            <option value="Oct">October</option>
+                            <option value="Nov">November</option>
+                            <option value="Dec">December</option>  
+                        </select> 
+                        
+                        <select class="form-control" style="margin-bottom:10px;">
+                            <option value="">Select</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option> 
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                        </select> 
+                    </div>
+                    <label>To</label>
+                    <div class="col">
+                        <select class="form-control" style="margin-bottom:10px;">
+                            <option value="">Select</option>
+                            <option value="Jan">January</option>
+                            <option value="Feb">Feburary</option>
+                            <option value="Mar">March</option>
+                            <option value="Apr">April</option>
+                            <option value="May">May</option>
+                            <option value="Jun">June</option>
+                            <option value="Jul">July</option>
+                            <option value="Aug">August</option>
+                            <option value="Sept">September</option>
+                            <option value="Oct">October</option>
+                            <option value="Nov">November</option>
+                            <option value="Dec">December</option>  
+                        </select> 
+                        <select class="form-control" style="margin-bottom:10px;">
+                            <option value="">Select</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option> 
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                        </select> 
+                    </div>
+                    <div class="col">
+                        <label>Location:</label>
+                        <input type="text" class="form-control" placeholder="City, State, Country" style="margin-bottom: 10px;" required >
+                    </div>
+                    <div class="col">
+                    <textarea class="form-control" style="margin-bottom: 10px; height: 150px;" Placeholder="Job Responsibilities " required></textarea>
+                    </div> 
+                    <div class="col">
+                    <textarea class="form-control" style="margin-bottom: 10px; height: 150px;" Placeholder="Achievements    " required></textarea>
+                    </div> 
+                    
+                    
+                    <div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <button class="btn btn-primary" data-dismiss="modal" type="button" style="margin-left: 15px;">Skip</button>
+                    </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+      <!---------------  Model 4 (Education) ---------->
+    
+    <div class="resume-modal modal fade" id="resumeModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Education</h2>
+                  <p class="item-intro text-muted">All fields are required</p>
+                <form>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Your Degree/Course" style="margin-bottom: 10px;" required >
+                    </div>  
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Stream" style="margin-bottom: 10px;" required >
+                    </div> 
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Institute/Scholl" style="margin-bottom: 10px;" required>
+                    </div>
+                     <div class="col">
+                        <input type="email" class="form-control" placeholder="University/Board" style="margin-bottom: 10px;" required>
+                    </div>
+                   
+                    <div class="col">
+                        <input type="number" class="form-control" placeholder="Percentage/CGPA" style=" margin-bottom: 10px; " required>
+                    </div>
+                   
+                    <div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <button class="btn btn-primary" data-dismiss="modal" type="button" style="margin-left: 15px;">Skip</button>
+                    </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+     <!---------------  Model 5 (Skills) ---------->
+    
+    <div class="resume-modal modal fade" id="resumeModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Skills</h2>
+                  <p class="item-intro text-muted">All fields are required</p>
+                <form>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Your Skill" style="margin-bottom: 10px;" required >
+                    </div>  
+                    <div class="col">
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio"> 1
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio"> 2
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio"> 3
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio"> 4
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio"> 5
+                        </label>
+                        
+                    </div>
+                   
+                    <div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <button class="btn btn-primary" data-dismiss="modal" type="button" style="margin-left: 15px;">Skip</button>
+                    </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+           <!---------------  Model 6 (Certification) ---------->
+    
+    <div class="resume-modal modal fade" id="resumeModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Certification</h2>
+                <p class="item-intro text-muted">All fields are required</p>
+                <form>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Certification title" style="margin-bottom: 10px;" required>
+                    
+                    </div> 
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Certifier" style="margin-bottom: 10px;" required >
+                    
+                    </div> 
+                    <label>Certification Date:</label>
+                    <div class="col">
+                    <input type="date" class="form-control" style="margin-bottom: 10px;" required>
+                    </div>    
+        
+                    <div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <button class="btn btn-primary" data-dismiss="modal" type="button" style="margin-left: 15px;">Skip</button>
+                    </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+              <!---------------  Model 7 (Honor) ---------->
+    
+    <div class="resume-modal modal fade" id="resumeModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Honours and Awards</h2>
+                <p class="item-intro text-muted">All fields are required</p>
+                <form>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Title" style="margin-bottom: 10px;" required>
+                    
+                    </div> 
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Issuer" style="margin-bottom: 10px;" required >
+                    
+                    </div> 
+                    <label>Issued on:</label>
+                    <div class="col">
+                    <input type="date" class="form-control" style="margin-bottom: 10px;" required>
+                    </div>
+                    <div class="col">
+                    <textarea class="form-control" style="margin-bottom: 10px; height: 150px;" Placeholder="Description.....     " required></textarea>
+                    </div>
+        
+                    <div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <button class="btn btn-primary" data-dismiss="modal" type="button" style="margin-left: 15px;">Skip</button>
+                    </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                  <!---------------  Model 8 (Research) ---------->
+    
+    <div class="resume-modal modal fade" id="resumeModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Researches/Projects</h2>
+                <p class="item-intro text-muted">All fields are required</p>
+                <form>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Title" style="margin-bottom: 10px;" required>
+                    
+                    </div> 
+                     <div class="col">
+                    <textarea class="form-control" style="margin-bottom: 10px; height: 150px;" Placeholder="Description.....     " required></textarea>
+                    </div>
+                     <label>Duration:</label>
+                    <div class="col">
+                        
+                        
+                        <select class="form-control" style="margin-bottom:10px;">
+                            <option value="">Select</option>
+                            <option value="Jan">January</option>
+                            <option value="Feb">Feburary</option>
+                            <option value="Mar">March</option>
+                            <option value="Apr">April</option>
+                            <option value="May">May</option>
+                            <option value="Jun">June</option>
+                            <option value="Jul">July</option>
+                            <option value="Aug">August</option>
+                            <option value="Sept">September</option>
+                            <option value="Oct">October</option>
+                            <option value="Nov">November</option>
+                            <option value="Dec">December</option>  
+                        </select> 
+                        
+                        <select class="form-control" style="margin-bottom:10px;">
+                            <option value="">Select</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option> 
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                        </select> 
+                    </div>
+                    <label>To</label>
+                    <div class="col">
+                        <select class="form-control" style="margin-bottom:10px;">
+                            <option value="">Select</option>
+                            <option value="Jan">January</option>
+                            <option value="Feb">Feburary</option>
+                            <option value="Mar">March</option>
+                            <option value="Apr">April</option>
+                            <option value="May">May</option>
+                            <option value="Jun">June</option>
+                            <option value="Jul">July</option>
+                            <option value="Aug">August</option>
+                            <option value="Sept">September</option>
+                            <option value="Oct">October</option>
+                            <option value="Nov">November</option>
+                            <option value="Dec">December</option>  
+                        </select> 
+                        <select class="form-control" style="margin-bottom:10px;">
+                            <option value="">Select</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option> 
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                        </select> 
+                    </div> 
+                     <div class="col">
+                        <input type="text" class="form-control" placeholder="Project Url" style="margin-bottom: 10px;" >
+                    
+                    </div> 
+                     <div class="col">
+                        <input type="text" class="form-control" placeholder="Guide Name" style="margin-bottom: 10px;" >
+                    
+                    </div> 
+                   
+                   
+        
+                    <div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <button class="btn btn-primary" data-dismiss="modal" type="button" style="margin-left: 15px;">Skip</button>
+                    </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                  <!---------------  Model 9 (Training) ---------->
+    
+    <div class="resume-modal modal fade" id="resumeModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Training</h2>
+                <p class="item-intro text-muted">All fields are required</p>
+                <form>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Training Title" style="margin-bottom: 10px;" required>
+                    
+                    </div> 
+                    <div class="col">
+                    <textarea class="form-control" style="margin-bottom: 10px; height: 150px;" Placeholder="Description.....     " required></textarea>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Conducted by" style="margin-bottom: 10px;" required >
+                    
+                    </div> 
+                     <div class="col">
+                        <input type="text" class="form-control" placeholder="Duration in(Days)" style="margin-bottom: 10px;" required >
+                    
+                    </div> 
+                    <label>Completed on:</label>
+                    <div class="col">
+                    <input type="date" class="form-control" style="margin-bottom: 10px;" required>
+                    </div>
+                    
+        
+                    <div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <button class="btn btn-primary" data-dismiss="modal" type="button" style="margin-left: 15px;">Skip</button>
+                    </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!---------------  Model 10 (References) ---------->
+    
+    <div class="resume-modal modal fade" id="resumeModal10" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">References</h2>
+                <p class="item-intro text-muted">All fields are required</p>
+               
+                <form>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Name" style="margin-bottom: 10px;" required >
+                    
+                    </div>  
+                     <div class="col">
+                        <input type="email" class="form-control" placeholder="xyz@example.com" style="margin-bottom: 10px;" required>
+                    </div>
+                    <div class="col">
+                        <input id="home" name="home" type="tel" class="form-control" style="width: 340px;" required>
+                        
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Organization" style="margin-bottom: 10px; margin-top: 10px; ">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Designation" style="margin-bottom: 10px;">
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <button class="btn btn-primary" data-dismiss="modal" type="button" style="margin-left: 15px;">Skip</button>
+                    </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+         <!---------------  Model 5 (Skills) ---------->
+    
+    <div class="resume-modal modal fade" id="resumeModal11" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Additional Information</h2>
+                  <p class="item-intro text-muted">All fields are required</p>
+                <form>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="What's your nationality" style="margin-bottom: 10px;" required >
+                    </div>  
+                    <div class="col">
+                        <label>Date Of Birth</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <label>Gender</label>
+                    <div class="col">
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio"> Male
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio"> Female
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio"> Other
+                        </label>
+                        
+                    </div>
+                     <label>Marital Status</label>
+                    <div class="col">
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio"> Single
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio"> Married
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio"> Other
+                        </label>
+                        
+                    </div>
+                     <div class="col">
+                    <textarea class="form-control" style="margin-bottom: 10px; height: 150px;" Placeholder="Hobbies     " required></textarea>
+                    </div>
+                     <div class="col">
+                    <textarea class="form-control" style="margin-bottom: 10px; height: 150px;" Placeholder="Affiliations    " required></textarea>
+                    </div>
+                    
+                    <div class="col">
+                        <select class="form-control">
+                            <option>Select</option>
+                            <option value="English">English</option>
+                            <option value="French">French</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="German">German</option>
+                        </select>
+                    
+                    </div>
+                     <div class="col">
+                        <label class="radio-inline">
+                          <input type="checkbox" name="optradio"> Read
+                        </label>
+                        <label class="radio-inline">
+                          <input type="checkbox" name="optradio"> Write
+                        </label>
+                        <label class="radio-inline">
+                          <input type="checkbox" name="optradio"> Speak
+                        </label>
+                        
+                    </div>
+                   
+                    <div>
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <button class="btn btn-primary" data-dismiss="modal" type="button" style="margin-left: 15px;">Skip</button>
+                    </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+    <script src="js/jquery.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/intlTelInput.js"></script>
+    <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      initialCountry: 'in',
+      utilsScript: "js/utils.js",
+    });
+    var home = document.querySelector("#home");
+    window.intlTelInput(home, {
+      initialCountry: 'in',
+      utilsScript: "js/utils.js",
+    }); 
+     var alternate = document.querySelector("#alternate");
+    window.intlTelInput(alternate, {
+      initialCountry: 'in',
+      utilsScript: "js/utils.js",
+    });     
+  </script>
+    
+</body>    
+</html>
+
